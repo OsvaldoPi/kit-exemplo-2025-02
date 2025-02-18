@@ -1,0 +1,1 @@
+for arquivo in dados/temperatura/*.csv
