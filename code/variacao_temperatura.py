@@ -18,7 +18,7 @@ file_path = pathlib.Path(sys.argv[1])
 data = pd.read_csv(file_path, comment="#")
 
 # Filtra dados dos últimos cinco anos
-last_five_years = data[data.year_decimal > data.year_decimal.iloc[-1] - 5]
+last_five_years = data[data.year_decimal > data.year_decimal.iloc[-1] - 20]
 
 # Regressão linear
 coefficients = np.polyfit(
